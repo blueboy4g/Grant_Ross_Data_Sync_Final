@@ -108,11 +108,11 @@ public class MockDatabase {
     }
 
     public boolean hasMoreRecordsSync(int numOfStagedRecords) {
-        System.out.println(numOfStagedRecords);
-        System.out.println(batchNumSync);
-        System.out.println(syncRecords);
-        System.out.println(syncRecordsStaged);
-        System.out.println(syncRecordsAfterLastRanTimestamp);
+//        System.out.println(numOfStagedRecords);
+//        System.out.println(batchNumSync);
+//        System.out.println(syncRecords);
+//        System.out.println(syncRecordsStaged);
+//        System.out.println(syncRecordsAfterLastRanTimestamp);
         return batchNumSync < numOfStagedRecords;
     }
     public void updateSyncRecordStatus(int custId, String status) {
