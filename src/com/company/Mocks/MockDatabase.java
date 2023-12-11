@@ -117,7 +117,7 @@ public class MockDatabase {
     }
     public void updateSyncRecordStatus(int custId, String status) {
         for (CustomerRecordDatabase customerRecordDatabase : syncRecords){
-            if (customerRecordDatabase.getCustId() == custId) {
+            if (customerRecordDatabase.getCustId() == custId && (customerRecordDatabase.getStatus() != "staged")) {
                 customerRecordDatabase.setStatus(status);
                 System.out.println("Updated customer id: " + custId + " to have status of: " + status);
                 break;
